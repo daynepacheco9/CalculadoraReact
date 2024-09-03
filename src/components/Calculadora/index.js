@@ -1,7 +1,7 @@
 
 import { useState } from "react"
 
-export default function Calculadora(params) {
+export default function Calculadora() {
     const [result, setResult] = useState(0);
     const [numA,setNumA] = useState("");
     const [numB,setNumB] = useState("");
