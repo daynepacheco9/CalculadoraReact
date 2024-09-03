@@ -17,27 +17,23 @@ export default function Calculadora() {
             if (numB === "0") {
                 return;
             }
-            setResult(parseInt(numA) / parseInt(numB));
+            setResult(Number(numA) / Number(numB));
             setDiv(false)
             setNumA(result);
         }
         if (soma ) {
             setResult(Number(numA) + Number(numB));
-            console.log(numB);
             setSoma(false)
             setNumA(result);
         }
         if (sub) {
             setResult(Number(numA) - Number(numB));
-            console.log(numB);
             setSub(false)
             setNumA(result);
         }
         if (mult) {
-            setResult(numA * numB);
+            setResult(Number(numA) * Number(numB));
             setMult(false)
-            console.log( numA);
-            console.log(typeof numA, typeof numB);
             setNumA(result);
         }
     }
